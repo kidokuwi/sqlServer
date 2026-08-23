@@ -61,11 +61,9 @@ class SimpleGUI:
         tk.Button(root, text="Update Account (Account ID, Nickname, Pokecoins, Level)", command=self.update_account).pack()
         tk.Button(root, text="Get All Accounts", command=self.get_all_accounts).pack()
 
-        # --- SECTION 3: VULNERABILITY DEMO ---
         tk.Label(root, text=" SECURITY DEMO ").pack()
         tk.Button(root, text="SQL Injection (Username)", command=self.sql_injection).pack()
 
-        # --- OUTPUT BOX ---
         tk.Label(root, text="Output Response:").pack()
         self.output = tk.Text(root, height=5, width=60)
         self.output.pack()
